@@ -31,6 +31,12 @@ header {
   justify-content: center;
 }
 
+.navigation{
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
 .dropdown {
   position: absolute;
   left: 0;
@@ -51,6 +57,7 @@ h1 {
   text-align: start;
   color: $dark;
   font-weight: 700;
+  width: 200px;
 }
 img {
   width: 200px;
