@@ -17,50 +17,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="title">
-      <button class="dropdown button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <h1>Fitness App</h1>
-    </div>
-
-    <div class="navigation closed">
-      <a class="navbar-item">Exercises</a>
-      <a class="navbar-item">Diet</a>
-      <a class="navbar-item">Supplements</a>
-      <a class="navbar-item">Rest advices</a>
-    </div>
-
-    <div class="picture">
-      <img
-        src="https://boomcdn.fra1.digitaloceanspaces.com/92a1b85c7861515d6caa589a34574969.png"
-      />
-    </div>
-
-    <div class="description">
-      <div class="box">
-        <a>Enter your workout to track your progress</a>
+    <header>
+      <div class="title">
+        <button class="dropdown button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Fitness App</h1>
       </div>
-    </div>
+      <nav class="navigation closed">
+        <a class="navbar-item">Exercises</a>
+        <a class="navbar-item">Diet</a>
+        <a class="navbar-item">Supplements</a>
+        <a class="navbar-item">Rest advices</a>
+      </nav>
+    </header>
 
-    <label class="label"> Your Goal </label>
-    <progress class="progress is-success is-large" value="60" max="100">
-      60%
-    </progress>
+    
 
-    <div class="buttons">
-      <button class="button is-large">
-        <i class="fa-solid fa-dumbbell"></i>
-      </button>
+    <main>
+      <div class="picture">
+        <img
+          src="https://boomcdn.fra1.digitaloceanspaces.com/92a1b85c7861515d6caa589a34574969.png"
+        />
+      </div>
+  
+      <article>
+        <section class="description">
+          <div class="box">
+            <a>Enter your workout to track your progress</a>
+          </div>
+        </section>
+    
+        <section class="goal">
+          <label class="label"> Your Goal </label>
+          <progress class="progress is-success is-large" value="60" max="100">
+            60%
+          </progress>
+        </section>
+      </article>
+    </main>
 
-      <button class="button is-large">
-        <i class="fa-solid fa-house"></i>
-      </button>
-
-      <button class="button is-large">
-        <i class="fa-solid fa-apple-whole"></i>
-      </button>
-    </div>
+    <footer>
+      <div class="buttons">
+        <button class="button is-large">
+          <i class="fa-solid fa-dumbbell"></i>
+        </button>
+  
+        <button class="button is-large">
+          <i class="fa-solid fa-house"></i>
+        </button>
+  
+        <button class="button is-large">
+          <i class="fa-solid fa-apple-whole"></i>
+        </button>
+      </div>
+    </footer>
 
     <script>
       document.querySelector(".dropdown").addEventListener("click", () => {
